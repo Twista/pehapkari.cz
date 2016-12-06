@@ -65,6 +65,15 @@ header a:hover {
     float: right;
 }
 
+#mobile-menu a {
+    color: #4bf4ff;
+}
+
+#mobile-menu a.active, #mobile-menu a:hover {
+    color: white;
+}
+
+
 .section {
     padding-top: 3em;
     padding-bottom: 3em;

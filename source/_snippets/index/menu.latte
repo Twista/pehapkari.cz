@@ -1,8 +1,8 @@
 <header>
     <div class="container">
-        <a href="/"><img src="/assets/images/logo-header.svg" alt=""></a>
+        <a href="/" class="hidden-xs"><img src="/assets/images/logo-header.svg" alt=""></a>
 
-        <nav class="top-navigation">
+        <nav class="top-navigation hidden-xs">
             <a href="/blog" n:class="(isset($id) && $id === blog) || ($layout === post) ? active">
                 <em class="fa fa-book fa-fw"></em>
                 Píšeme blog
@@ -12,5 +12,23 @@
                 Slovníček
             </a>
         </nav>
+
+        <div id="mobile-menu" class="row text-center hidden-md hidden-sm hidden-lg">
+            <a href="/" n:class="(isset($id) && $id === home) ? active, col-xs-4">
+                <em class="fa fa-home"></em>
+                <br>
+                Péhápkaři
+            </a>
+            <a href="/blog" n:class="(isset($id) && $id === blog) || ($layout === post) ? active, col-xs-4">
+                <em class="fa fa-book fa-fw"></em>
+                <br>
+                Píšeme blog
+            </a>
+            <a href="/slovnicek" n:class="(isset($id) && $id === dictionary) ? active, col-xs-4">
+                <em class="fa fa-language fa-fw"></em>
+                <br>
+                Slovníček
+            </a>
+        </div>
     </div>
 </header>
